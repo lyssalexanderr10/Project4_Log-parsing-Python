@@ -12,6 +12,6 @@ The main questions that this code will be address is:
 
 In order to access this data please follow these steps:
 
-Please download (.py) file to retrieve the answers to both questions stated above. 
+Please download (percent_request.py) file to retrieve the answers to question three - six. 
 
 All this information was generated and coded by utilizing Visual Studio Code. In order to see these files be sure to Python3.
