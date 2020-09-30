@@ -7,12 +7,9 @@ URL_PATH = 'https://s3.amazonaws.com/tcmg476/http_access_log'
 LOCAL_FILE = 'request.log'
 
 # Alt.: supply an anonmymous callback function to print a simple progress bar to screen
-if (os.path.isfile("local_copy.log") == False):
-  print("Downloading local copy of log file...")
   local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True))
   print("Download complete! Parsing log file...")
 else:
-  print("Local copy of log file found! Parsing log file...")
 
 # Create this generate output into a percentage 
 def print_nicely(number, fours, threes, total):
